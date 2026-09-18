@@ -66,8 +66,8 @@ export class ProfileRender {
                     <p>${repo.description || 'No description available'}</p>
                     <div class="pinned-repository-overview">
                         <span><div class="language-badge" style="background-color: ${languageColor}"></div> ${repo.language || 'Unknown'}</span>
-                        <span>⭐ ${repo.stargazers_count || 0} Stars</span>
-                        <span>🪢 ${repo.forks_count || 0} Forks</span>
+                        <span>⭐ ${repo.stars || 0} Stars</span>
+                        <span>🪢 ${repo.forks || 0} Forks</span>
                     </div>
                 </div>
             `
