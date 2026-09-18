@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+    
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="styles/markdown.css">
+
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    
+    <main>
+        <section class="profile-sidebar">
+            <img src="" alt="User Avatar" id="profile-picture">
+            <p id="profile-user-status" title="User status">In work</p>
+            <h1 id="profile-display-name" title="Display name">João Pinho</h1>
+            <p id="profile-username" title="User name">jvopinho</p>
+            
+            <br>
+            <div style="margin-top: 15px;" id="profile-details">
+                <p id="profile-bio" title="Bio">Just a typescript and bug developer</p>
+                <p title="Company">🏢 <a href="https://github.com/syonebr">Syone Soluções para Restaurantes</a></p>
+                <p title="Location">📍 Paraná - Brazil</p>
+                <p title="Email">✉️ <a href="mailto:jvopinho@sypos.com.br">jvopinho@sypos.com.br</a></p>
+                <p title="Website">🔗 <a href="https://jvopinho.vercel.app/">https://jvopinho.vercel.app</a></p>
+            </div>
+        </section>
+        
+        <section class="content-wrapper">
+            <nav>
+                <a href="#overview" class="active" id="overview-nav">Overview</a>
+                <a href="#repositories" id="repositories-nav">Repositories</a>
+                <a href="#projects" id="projects-nav">Projects</a>
+            </nav>
+            
+            <div class="content">
+                <div id="overview-section" class="content-section" hidden>
+                    <div id="profile-readme" hidden>
+
+                    </div>
+                    <div class="pinned-repositories" hidden>
+                        <span>Pinned</span>
+                        
+                        <div class="pinned-repositories-list">
+                            <div class="pinned-repository">
+                                <h2><a href="">Syone</a></h2>
+                                <p>Restaurant management system</p>
+                                
+                                <div class="pinned-repository-overview">
+                                    <span><div class="language-badge" style="background-color: #3178c6"></div> TypeScript</span>
+                                    
+                                    <span>⭐ 100 Stars</span>
+                                    
+                                    <span>🪢 8 Forks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.4.15/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js" crossorigin="anonymous"></script>
+    <script src="js/profile.js" type="module"></script>
+</body>
+</html>

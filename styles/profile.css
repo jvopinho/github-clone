@@ -1,0 +1,161 @@
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+section.profile-sidebar {
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section.profile-sidebar p {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+section.profile-sidebar img#profile-picture {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+section.profile-sidebar #profile-user-status {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid lightgray;
+    font-size: 0.9rem;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-top: 0;
+}
+
+section.profile-sidebar #profile-display-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+section.profile-sidebar #profile-username {
+    font-size: 1.1rem;
+    color: gray;
+}
+
+section.profile-sidebar #profile-bio {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+section.content-wrapper {
+    padding: 10px;
+}
+
+section.content-wrapper nav {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    gap: 10px;
+
+    border-bottom: 1px solid lightgray;
+}
+
+section.content-wrapper nav a {
+    text-decoration: none;
+    color: #0366d6;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+}
+
+section.content-wrapper nav a:hover {
+    border-bottom: 2px solid #0362cf;
+}
+
+section.content-wrapper nav a.active {
+    border-bottom: 2px solid orange;
+    color: orange;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+#overview-section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.pinned-repositories {}
+
+.pinned-repositories .pinned-repositories-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.pinned-repository {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    padding: 20px;
+
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.pinned-repository h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.pinned-repository p {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.pinned-repository .pinned-repository-overview {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.pinned-repository .pinned-repository-overview span {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.language-badge {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+#profile-readme {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+#profile-readme .profile-readme-source a {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2px;
+    color: #458bdb;
+}
+
+#profile-readme .profile-readme-source span {
+    font-weight: 500;
+    color: #044fa5;
+}
